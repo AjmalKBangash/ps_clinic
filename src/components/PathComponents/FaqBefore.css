@@ -1,0 +1,97 @@
+.faq-top {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  align-items: start;
+  padding: 4vh 2vw;
+}
+.faq-first-por {
+  padding: 4vh 2vw;
+  border-right: 2px solid #2e8b57;
+}
+.faq-first-por-title {
+  font-size: 4vw;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+}
+.faq-first-por-remember {
+  position: relative;
+  background-color: yellowgreen;
+  font-size: 15px;
+  padding: 4vh 3vw 4vh 6vw;
+  margin: 4.5vh 0;
+}
+.faq-first-por-remember-icon {
+  position: absolute;
+  font-size: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+}
+.faq-sec-por-help {
+  position: relative;
+  padding-left: 5vh !important;
+}
+.faq-sec-por-help-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2.5%;
+}
+.faq-sec-por {
+  padding: 4vh 3vw;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.faq-sec-por-card {
+  width: inherit;
+  font-size: 20px;
+  background-color: rgba(128, 128, 128, 0.11);
+  line-height: 40px;
+  padding: 2vh 3vw;
+  color: rgb(80, 80, 80);
+}
+.faq-sec-por-help {
+  width: 100%;
+  background-color: rgb(80, 80, 80);
+  padding: 2vh 2vw;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.faq-sec-por-card li {
+  list-style-type: circle;
+}
+.faq-sec-por-card li:hover {
+  color: #2e8b57;
+  cursor: pointer;
+}
+/* ///////////////////////////////////// RESPONSIVENESS  */
+@media screen and (max-width: 942px) {
+  .faq-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-first-por {
+    border-right: none;
+  }
+  .faq-first-por-title {
+    font-size: 5.5vw;
+  }
+  .faq-first-por-remember {
+    font-size: 15px;
+    padding: 4vh 2vw 4vh 13.5vw;
+    margin: 4.5vh 0;
+  }
+  .faq-sec-por {
+    padding: 4vh 0vw;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .faq-sec-por-card {
+    padding: 2vh 6vw;
+  }
+}

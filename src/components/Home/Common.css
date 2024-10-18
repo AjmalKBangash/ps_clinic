@@ -1,0 +1,70 @@
+.common-name-font {
+  font-size: 8vh;
+  font-family: "Great Vibes", cursive;
+  font-weight: 900;
+  font-style: normal;
+  color: #2e8b57;
+}
+.common-btn {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 33px 10px 12px;
+  width: fit-content;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  color: #2e8b57;
+  border: 2px solid #2e8b57;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin: 2vh 15px;
+}
+.common-btn:hover {
+  background-color: #2e8b57;
+  color: white;
+}
+.common-btn-icon {
+  font-size: 17px;
+  position: absolute;
+  top: 27%;
+  right: 10%;
+}
+.common-visit-link {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 33px 10px 12px;
+  width: fit-content;
+  position: relative;
+  background-color: #2e8b57;
+  color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+.common-visit-link:hover {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 28px 7px 9px;
+}
+.common-visit-link-cover {
+  height: 50px;
+  width: fit-content;
+  margin: auto;
+}
+.common-visit-link-icon {
+  font-size: 17px;
+  position: absolute;
+  top: 25.5%;
+  right: 7%;
+}
+/* //////////////////////////////////////////////// RESPONSIVENESS FOR COMMON CLASSES  */
+@media screen and (max-width: 850px) {
+  .common-name-font {
+    font-size: 5vh;
+  }
+}

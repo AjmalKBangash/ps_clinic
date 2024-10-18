@@ -1,0 +1,238 @@
+ <div className="nav-side-menu">
+        <div className="nav-side-menu-close">
+          <AiFillCloseCircle />
+        </div>
+        <li>Home</li>
+        <li className="nav-side-menu-plus" onClick={toggleDropdown}>
+          Procedures <FaPlus />
+          {/* <div className="nav-side-menu-dropdown">
+            <li className="nav-side-menu-plus">
+              Breast Surgery <FaPlus />
+            </li>
+            <li>Breast Surgery</li>
+            <li>Breast Surgery</li>
+            <li className="nav-side-menu-plus">
+              Body Surgery <FaPlus />
+            </li>
+            <li>Breast Surgery</li>
+            <li className="nav-side-menu-plus">
+              Face Surgery <FaPlus />
+            </li>
+          </div> */}
+        </li>
+        {/* ///////////////////////////////////////////////////////////////////////// First inner */}
+        <div className="nav-side-menu-dropdown nav-side-menu-dropdown-show">
+          <li className="nav-side-menu-plus">
+            <div>
+              <MdKeyboardArrowRight />
+              Breast Surgery
+            </div>
+            <FaPlus />
+          </li>
+          {/* /////////////////////////////////////////////////////////////////////////////////// Second Inner */}
+          <div className="nav-side-menu-dropdown-002">
+            <li>
+              <MdKeyboardArrowRight />
+              Breast Augmentation
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Breast Lift
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Breast Reduction
+            </li>
+          </div>
+          {/* /////////////////////////////////////////////////////////////////////////////Second Inner completed */}
+          <li>
+            <MdKeyboardArrowRight />
+            Body Surgery
+          </li>
+          <li>
+            <MdKeyboardArrowRight /> Face Surgery
+          </li>
+          <li className="nav-side-menu-plus">
+            <div>
+              <MdKeyboardArrowRight />
+              Other Procedures
+            </div>
+            <FaPlus />
+          </li>{" "}
+          <div className="nav-side-menu-dropdown-002">
+            <li>
+              <MdKeyboardArrowRight />
+              Vaginal Rejuvenation
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Thigh Lift
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              ARM Lift
+            </li>
+          </div>
+          <li>
+            <MdKeyboardArrowRight />
+            Filler
+          </li>
+          <li className="nav-side-menu-plus">
+            <div>
+              <MdKeyboardArrowRight />
+              Laser Hair Removal
+            </div>
+            <FaPlus />
+          </li>
+        </div>
+        {/* /////////////////////////////////////////////////////////////////////////////////////// First inner completed */}
+        <li className="nav-side-menu-plus">
+          Doctors <FaPlus />
+        </li>{" "}
+        <div className="nav-side-menu-dropdown nav-side-menu-dropdown-show">
+          <li>
+            <MdKeyboardArrowRight />
+            Dr M.Imran Orakzai
+          </li>
+          <li>
+            <MdKeyboardArrowRight />
+            Dr Zarak Khan
+          </li>
+          <li>
+            <MdKeyboardArrowRight />
+            Dr Ekramuddin
+          </li>
+        </div>
+        <li>Financing</li>
+        <li>Gallary</li>
+        <li className="nav-side-menu-plus">
+          Resources <FaPlus />
+        </li>
+      </div>
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+
+
+      <div className="nav-side-menu">
+        <div className="nav-side-menu-close">
+          <AiFillCloseCircle />
+        </div>
+
+        <li>Home</li>
+
+        {/* Procedures Dropdown */}
+        <li
+          className="nav-side-menu-plus"
+          onClick={() => toggleDropdown("procedures")}
+        >
+          Procedures <FaPlus />
+        </li>
+
+        {dropdownVisible.procedures && (
+          <div className="nav-side-menu-dropdown nav-side-menu-dropdown-show">
+            {/* Breast Surgery */}
+            <li
+              className="nav-side-menu-plus"
+              onClick={() => toggleSubDropdown("breastSurgery")}
+            >
+              <div>
+                <MdKeyboardArrowRight />
+                Breast Surgery
+              </div>
+              <FaPlus />
+            </li>
+
+            {subDropdownVisible.breastSurgery && (
+              <div className="nav-side-menu-dropdown-002 nav-side-menu-dropdown-002-show">
+                <li>
+                  <MdKeyboardArrowRight />
+                  Breast Augmentation
+                </li>
+                <li>
+                  <MdKeyboardArrowRight />
+                  Breast Lift
+                </li>
+                <li>
+                  <MdKeyboardArrowRight />
+                  Breast Reduction
+                </li>
+              </div>
+            )}
+
+            {/* Other procedures */}
+            <li>
+              <MdKeyboardArrowRight />
+              Body Surgery
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Face Surgery
+            </li>
+            <li
+              className="nav-side-menu-plus"
+              onClick={() => toggleSubDropdown("otherProcedures")}
+            >
+              <div>
+                <MdKeyboardArrowRight />
+                Other Procedures
+              </div>
+              <FaPlus />
+            </li>
+
+            {subDropdownVisible.otherProcedures && (
+              <div className="nav-side-menu-dropdown-002 nav-side-menu-dropdown-002-show">
+                <li>
+                  <MdKeyboardArrowRight />
+                  Vaginal Rejuvenation
+                </li>
+                <li>
+                  <MdKeyboardArrowRight />
+                  Thigh Lift
+                </li>
+                <li>
+                  <MdKeyboardArrowRight />
+                  Arm Lift
+                </li>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Doctors Dropdown */}
+        <li
+          className="nav-side-menu-plus"
+          onClick={() => toggleDropdown("doctors")}
+        >
+          Doctors <FaPlus />
+        </li>
+
+        {dropdownVisible.doctors && (
+          <div className="nav-side-menu-dropdown nav-side-menu-dropdown-show">
+            <li>
+              <MdKeyboardArrowRight />
+              Dr M.Imran Orakzai
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Dr Zarak Khan
+            </li>
+            <li>
+              <MdKeyboardArrowRight />
+              Dr Ekramuddin
+            </li>
+          </div>
+        )}
+
+        <li>Financing</li>
+        <li>Gallery</li>
+
+        {/* Resources Dropdown */}
+        <li
+          className="nav-side-menu-plus"
+          onClick={() => toggleDropdown("resources")}
+        >
+          Resources <FaPlus />
+        </li>
+      </div>

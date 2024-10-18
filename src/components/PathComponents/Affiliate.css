@@ -1,0 +1,60 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.aff-top {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(80, 80, 80);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.aff-first-por {
+  padding: 3vh;
+  background-color: rgba(128, 128, 128, 0.144);
+}
+.aff-first-por-heading {
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+.aff-first-por-des {
+  padding: 2vh 0;
+  line-height: 25px;
+}
+/* //////////// */
+.aff-sec-por {
+  padding: 3vh;
+}
+.aff-sec-por div {
+  font-size: 2.2vw;
+  font-weight: 700;
+  padding: 1vh 0;
+}
+.aff-sec-por-title {
+  color: #2e8b57;
+  font-size: 3vw !important;
+  font-weight: 900 !important;
+}
+
+/* /////////////////////////// RESPONSIVENESS  */
+@media screen and (max-width: 740px) {
+  .aff-top {
+    grid-template-columns: auto;
+  }
+  .aff-first-por-heading {
+    font-size: 5vw;
+  }
+  .aff-sec-por div {
+    font-size: 4vw;
+  }
+  .aff-sec-por-title {
+    font-size: 4.5vw !important;
+  }
+}

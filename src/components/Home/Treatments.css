@@ -1,0 +1,23 @@
+.treatments-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0px;
+  margin: 0;
+  background-color: rgb(212, 212, 212);
+  background-color: #ff58331e;
+}
+.procedure-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.procedure-visit-link {
+  height: 42px;
+}
+.treatment-visit-link {
+  background-color: #ff5733 !important;
+}

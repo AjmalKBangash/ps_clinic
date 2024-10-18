@@ -1,0 +1,19 @@
+.procedures-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0px;
+  margin: 0;
+  background-color: #2e8b5634;
+}
+.procedure-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.procedure-visit-link {
+  height: 42px;
+}

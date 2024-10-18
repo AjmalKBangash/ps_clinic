@@ -1,0 +1,27 @@
+/* FAQ.css */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: height 0.3s ease; /* Smooth transition */
+}
+
+.faq-content {
+  padding-top: 10px;
+  color: #555;
+}
+
+.faq-icon {
+  font-size: 14px;
+  color: #555;
+}

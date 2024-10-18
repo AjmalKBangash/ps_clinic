@@ -1,0 +1,47 @@
+.ps-top {
+  text-align: center;
+  padding: 8vh;
+  background-color: #2e8b5634;
+}
+.ps-title {
+  font-size: 7vh;
+  font-weight: 900;
+}
+.ps-heading {
+  font-size: 3vh;
+  font-weight: 900;
+}
+.ps-des {
+  color: rgb(80, 80, 80);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 15px 0;
+  line-height: 22px;
+}
+.ps-des-clr {
+  color: black;
+}
+.ps-visit-link {
+  margin: 0 auto !important;
+}
+.ps-visit-link-icon {
+  right: 4.5%;
+}
+@media screen and (max-width: 600px) {
+  .ps-title {
+    font-size: 4vh;
+    font-weight: 900;
+  }
+  .ps-heading {
+    font-size: 2vh;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ps-title {
+    font-size: 3vh;
+    font-weight: 900;
+  }
+}
