@@ -38,7 +38,10 @@ const BlogPosts = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 8;
+  const [currentPosts, setcurrentPosts] = useState({});
+  const [totalPages, settotalPages] = useState(0);
+
+  // const postsPerPage = 8;
 
   // Handle search by blog title
   useEffect(() => {
@@ -55,21 +58,25 @@ const BlogPosts = () => {
       filteredPosts = blogData;
     } else if (selectedCategory) {
       setIndvidualPostData(false);
-      filteredPosts = filteredPosts.filter(
-        (post) => post.category === selectedCategory
-      );
+      filteredPosts = filteredPosts.filter((post) => {
+        return post.category === selectedCategory;
+      });
     }
 
     setPosts(filteredPosts);
   }, [searchTerm, selectedCategory]);
 
   // Pagination logic
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  useEffect(() => {
+    const postsPerPage = 8;
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+    setcurrentPosts(currentPosts);
 
-  const totalPages = Math.ceil(posts.length / postsPerPage);
-
+    const totalPages = Math.ceil(posts.length / postsPerPage);
+    settotalPages(totalPages);
+  }, [posts]);
   const handleClickPage = (page) => setCurrentPage(page);
 
   // Update URL when individualPostData changes
@@ -104,13 +111,6 @@ const BlogPosts = () => {
   return (
     <>
       <Nav />
-      <ImageGalleryComponent />
-      <hr />
-      <br />
-      <ImageGallery />
-      <hr />
-      <br />
-      <Gallery />
       <div className="faq-top">
         <div className="faq-first-por blogs-first-por">
           {/* ??//////////////////// */}

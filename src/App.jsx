@@ -6,6 +6,7 @@ import TestimonialsPath from "./components/PathComponents/TestemonialsPath";
 import FaqBefore from "./components/PathComponents/FaqBefore";
 import FaqAfter from "./components/PathComponents/FaqAfter";
 import BlogPosts from "./components/PathComponents/BlogPosts";
+import BeforeAndAfter from "./components/PathComponents/BeforeAndAfter";
 // import SignUp from "./Components/Home/SignUp";
 // import SignIn from "./Components/Home/SignIn";
 // import ForgotPassword from "./Components/Home/ForgotPassword";
@@ -42,6 +43,7 @@ const router = createBrowserRouter(
       <Route path="/faq-after" element={<FaqAfter />} />
       <Route path="/blogs" element={<BlogPosts />} />
       <Route path="/blogs/:blogTitle" element={<BlogPosts />} />
+      <Route path="/gallery" element={<BeforeAndAfter />} />
       {/* Dynamic route for individual posts */}
     </>
   )

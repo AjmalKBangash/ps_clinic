@@ -146,8 +146,6 @@ function Nav() {
             </ul>
           </li>
           <li
-            // className="nav-hover-clr"
-            // to="affiliate-program"
             className={`nav-hover-clr ${
               activeNavLink_nav === "/affiliate-program" &&
               "nav-hover-clr-active"
@@ -156,7 +154,14 @@ function Nav() {
           >
             AFFILIATE
           </li>
-          <li className="nav-hover-clr">GALLARY</li>
+          <li
+            className={`nav-hover-clr ${
+              activeNavLink_nav === "/gallery" && "nav-hover-clr-active"
+            }`}
+            onClick={() => navigate("/gallery")}
+          >
+            GALLARY
+          </li>
           <li
             onMouseOver={() => setshowresources(true)}
             onMouseOut={() => setshowresources(false)}
