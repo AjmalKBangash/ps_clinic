@@ -16,8 +16,7 @@ function Testimonials() {
       </div>
       <div className="ps-des">
         <div>
-          Real testimonials from patients happy with their results at Xiluet
-          Plastic Surgery{" "}
+          Real testimonials from patients happy with their results at{" "}
           <span className="ps-des-clr">Rejuva Aesthetics Plastic Surgery.</span>
         </div>
       </div>

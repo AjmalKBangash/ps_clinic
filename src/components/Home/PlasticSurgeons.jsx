@@ -1,7 +1,9 @@
 import "./PlasticSurgeons.css";
 import { FaAngleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function PlasticSurgeons() {
+  const navigate = useNavigate();
   return (
     <div className="ps-top">
       <div className="ps-title">
@@ -41,12 +43,19 @@ function PlasticSurgeons() {
           Come True”.
         </div>
       </div>
-      <div className="common-visit-link-cover">
-        <div className="common-visit-link ps-visit-link">
-          VIEW ALL PLASTICS SURGEONS
-          <FaAngleRight className="common-visit-link-icon ps-visit-link-icon" />
-        </div>
-      </div>
+      {window.location.href === "http://localhost:5173/" ? (
+        <>
+          <div className="common-visit-link-cover">
+            <div
+              className="common-visit-link ps-visit-link"
+              onClick={() => navigate("/plastic-surgeons")}
+            >
+              VIEW ALL PLASTICS SURGEONS
+              <FaAngleRight className="common-visit-link-icon ps-visit-link-icon" />
+            </div>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 }

@@ -20,6 +20,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import PlasticSurgeonsComponent from "./components/PathComponents/PlasticSurgeonsComponent";
+import PlasticSurgeonsIntro from "./components/PathComponents/PlasticSurgeonsIntro";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +46,14 @@ const router = createBrowserRouter(
       <Route path="/blogs" element={<BlogPosts />} />
       <Route path="/blogs/:blogTitle" element={<BlogPosts />} />
       <Route path="/gallery" element={<BeforeAndAfter />} />
+      <Route
+        path="/plastic-surgeons"
+        element={<PlasticSurgeonsComponent />}
+      ></Route>
+      <Route
+        path="/plastic-surgeons/:doctorName"
+        element={<PlasticSurgeonsIntro />}
+      />
       {/* Dynamic route for individual posts */}
     </>
   )

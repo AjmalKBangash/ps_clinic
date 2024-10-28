@@ -131,7 +131,7 @@ function Nav() {
             className={`nav-hover-clr ${
               activeNavLink_nav === "/doctors" && "nav-hover-clr-active"
             }`}
-            onClick={() => navigate("/doctors")}
+            onClick={() => navigate("/plastic-surgeons")}
           >
             DOCTORS
             <FaAngleDown className="nav-down-arrow" />
@@ -239,6 +239,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      {/* //////////////////////////// SIDE MENU STARTED  */}
       <div
         className={`nav-side-menu ${
           closingSideMenu ? "nav-side-menu-closing" : ""

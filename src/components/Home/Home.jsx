@@ -16,7 +16,8 @@ function Home() {
       <Nav />
       <ImageOverlay
         // imageSrc="https://your-image-url.com/plastic-surgery.jpg"
-        imageSrc="ps_clinic/ps_clinic001.jpg"
+        // imageSrc="ps_clinic/ps_clinic001.jpg"
+        imageSrc="ps_clinic/ps_clinic_home.jpg"
       />
       <Facility />
       <Procedures />
