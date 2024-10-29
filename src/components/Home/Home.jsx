@@ -16,13 +16,12 @@ function Home() {
       <Nav />
       <ImageOverlay
         // imageSrc="https://your-image-url.com/plastic-surgery.jpg"
-        // imageSrc="ps_clinic/ps_clinic001.jpg"
-        imageSrc="ps_clinic/ps_clinic_home.jpg"
+        imageSrc="/ps_clinic/ps_clinic_home.jpg"
       />
       <Facility />
       <Procedures />
       <Treatments />
-      <ImageWT imageUrl="ps_clinic/ps_clinic003.png" text="Your Text Here" />
+      <ImageWT imageUrl="/ps_clinic/ps_clinic003.png" text="Your Text Here" />
       <PlasticSurgeons />
       <Promotion />
       <PlasticSurgery />

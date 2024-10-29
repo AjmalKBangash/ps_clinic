@@ -7,17 +7,17 @@ const Promotion = () => {
     <div className="image-container" style={{ minHeight: "500px" }}>
       {/* Three images stacked behind */}
       <img
-        src="ps_clinic/pk-currency.jpg"
+        src="/ps_clinic/pk-currency.jpg"
         alt="background"
         className="bg-image"
       />
       {/* <img
-        src="ps_clinic/ps_clinic003.png"
+        src="/ps_clinic/ps_clinic003.png"
         alt="background"
         className="bg-image"
       />
       <img
-        src="ps_clinic/ps_clinic003.png"
+        src="/ps_clinic/ps_clinic003.png"
         alt="background"
         className="bg-image"
       /> */}

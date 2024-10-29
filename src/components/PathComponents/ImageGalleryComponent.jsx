@@ -19,7 +19,7 @@ const images = [
     category: "Liposuction",
     content: "Learn about the basics of liposuction.",
     // img: "https://www.plasticsurgery.org/documents/Health-Library/01-liposuction-guide.jpg",
-    img: "ps_clinic/ps_clinic001.jpg",
+    img: "/ps_clinic/ps_clinic001.jpg",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const images = [
     title: "Mommy Makeover Transformation",
     category: "Mommy Makeover",
     content: "The transformative process of a mommy makeover.",
-    img: "ps_clinic/ps_clinic002.jpeg",
+    img: "/ps_clinic/ps_clinic002.jpeg",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const images = [
     title: "Top Plastic Surgeons Near You",
     category: "Plastic Surgeons",
     content: "Meet the top plastic surgeons in your area.",
-    img: "ps_clinic/ps_clinic003.png",
+    img: "/ps_clinic/ps_clinic003.png",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const images = [
     title: "Guide to Plastic Surgery",
     category: "Plastic Surgery",
     content: "A comprehensive guide to plastic surgery.",
-    img: "ps_clinic/ps_clinic002.jpeg",
+    img: "/ps_clinic/ps_clinic002.jpeg",
   },
 ];
 

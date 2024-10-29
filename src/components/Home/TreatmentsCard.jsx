@@ -9,7 +9,7 @@ function TreatmentsCard() {
         <div className="procedurecard-card">
           <div className="procedurecard-img-div">
             <img
-              src="ps_clinic/ps_clinic001.jpg"
+              src="/ps_clinic/ps_clinic001.jpg"
               className="procedurecard-img"
             />
           </div>
@@ -37,7 +37,7 @@ function TreatmentsCard() {
         <div className="procedurecard-card">
           <div className="procedurecard-img-div">
             <img
-              src="ps_clinic/ps_clinic002.jpeg"
+              src="/ps_clinic/ps_clinic002.jpeg"
               className="procedurecard-img"
             />
           </div>
@@ -65,7 +65,7 @@ function TreatmentsCard() {
         <div className="procedurecard-card">
           <div className="procedurecard-img-div">
             <img
-              src="ps_clinic/ps_clinic001.jpg"
+              src="/ps_clinic/ps_clinic001.jpg"
               className="procedurecard-img"
             />
           </div>
@@ -93,7 +93,7 @@ function TreatmentsCard() {
         <div className="procedurecard-card">
           <div className="procedurecard-img-div">
             <img
-              src="ps_clinic/ps_clinic002.jpeg"
+              src="/ps_clinic/ps_clinic002.jpeg"
               className="procedurecard-img"
             />
           </div>

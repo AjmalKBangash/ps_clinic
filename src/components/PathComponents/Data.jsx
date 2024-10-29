@@ -398,7 +398,7 @@ const blogData = [
     category: "Liposuction",
     content: "Learn about the basics of liposuction.",
     // img: "https://www.plasticsurgery.org/documents/Health-Library/01-liposuction-guide.jpg",
-    img: "ps_clinic/ps_clinic001.jpg",
+    img: "/ps_clinic/ps_clinic001.jpg",
   },
   {
     id: 2,
@@ -609,6 +609,48 @@ const blogData = [
     category: "Liposuction",
     content: "Breaking down the costs associated with liposuction.",
     img: "https://www.liposuctioncost.com/images/lipo-costs.jpg",
+  },
+  {
+    id: 32,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
+  },
+  {
+    id: 33,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
+  },
+  {
+    id: 34,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
+  },
+  {
+    id: 35,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
+  },
+  {
+    id: 36,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
+  },
+  {
+    id: 37,
+    title: "Mini Tummy Tuck vs. Full Tummy Tuck",
+    category: "Tummy Tuck",
+    content: "Differences between a mini and full tummy tuck.",
+    img: "https://www.mini-full-tummytuck.com/images/tummy-tuck.jpg",
   },
 ];
 

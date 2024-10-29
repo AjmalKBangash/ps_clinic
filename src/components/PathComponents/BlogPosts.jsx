@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./BlogPosts.css";
 import BlogCard from "./BlogCard";
 import blogData from "./Data";
-
 import "./FaqBefore.css";
 import Footer from "../Home/Footer";
 import Nav from "../Home/Nav";
@@ -53,10 +52,10 @@ const BlogPosts = () => {
       );
     }
 
-    if (selectedCategory && selectedCategory === "All") {
+    if (selectedCategory && selectedCategory === "All" && searchTerm === "") {
       setIndvidualPostData(false);
       filteredPosts = blogData;
-    } else if (selectedCategory) {
+    } else if (selectedCategory && searchTerm === "") {
       setIndvidualPostData(false);
       filteredPosts = filteredPosts.filter((post) => {
         return post.category === selectedCategory;
@@ -76,7 +75,7 @@ const BlogPosts = () => {
 
     const totalPages = Math.ceil(posts.length / postsPerPage);
     settotalPages(totalPages);
-  }, [posts]);
+  }, [posts, currentPage]);
   const handleClickPage = (page) => setCurrentPage(page);
 
   // Update URL when individualPostData changes
@@ -147,7 +146,7 @@ const BlogPosts = () => {
                 <div className="blogs-posts-ind-img">
                   <img
                     className="blogs-posts-ind-img"
-                    src="ps_clinic/ps_clinic001.jpg"
+                    src="/ps_clinic/ps_clinic001.jpg"
                     // src={indvidualPostData.img}
                     alt={indvidualPostData.title}
                   />
@@ -261,7 +260,7 @@ const BlogPosts = () => {
                 >
                   <div className="procedurecard-img-div">
                     <img
-                      src="ps_clinic/ps_clinic001.jpg"
+                      src="/ps_clinic/ps_clinic001.jpg"
                       // src={post.img}
                       className="procedurecard-img"
                     />
@@ -282,6 +281,7 @@ const BlogPosts = () => {
               <p>No posts found.</p>
             )}
           </div>
+          {/* //////////////////////////////////////////////////////////////////////////////////////// */}
           <div className="pagination">
             {Array.from({ length: totalPages }, (_, index) => (
               <button
@@ -360,7 +360,7 @@ const BlogPosts = () => {
                   color: "white",
                   borderRadius: "20px",
                   backgroundColor: "#365899",
-                  padding: "1.5vh",
+                  padding: "1vh",
                   width: "22px",
                   fontSize: "22px",
                   cursor: "pointer",
@@ -372,7 +372,7 @@ const BlogPosts = () => {
                   color: "white",
                   borderRadius: "20px",
                   backgroundColor: "#c1317c",
-                  padding: "1.5vh",
+                  padding: "1vh",
                   width: "22px",
                   fontSize: "22px",
                   cursor: "pointer",
@@ -384,7 +384,7 @@ const BlogPosts = () => {
                   color: "white",
                   borderRadius: "20px",
                   backgroundColor: "#c4302b",
-                  padding: "1.5vh",
+                  padding: "1vh",
                   width: "22px",
                   fontSize: "22px",
                   cursor: "pointer",
@@ -396,7 +396,7 @@ const BlogPosts = () => {
                   color: "white",
                   borderRadius: "20px",
                   backgroundColor: "#00acee",
-                  padding: "1.5vh",
+                  padding: "1vh",
                   width: "22px",
                   fontSize: "22px",
                   cursor: "pointer",

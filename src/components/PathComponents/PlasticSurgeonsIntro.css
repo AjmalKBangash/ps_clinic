@@ -18,6 +18,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0 10px 0;
 }
 .plastic-surgery-intro-dr-img {
   position: absolute;
@@ -27,6 +29,13 @@
   width: 300px;
   /* border-top-left-radius: 20px; */
   border-top-right-radius: 20px;
+}
+.plastic-surgery-intro-specialization {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* ///////////////////////////////////////////// MEDIA QUERIES */

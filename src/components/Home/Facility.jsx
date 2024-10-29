@@ -49,7 +49,7 @@ function Facility() {
         <div className="facility-2nd-por">
           <img
             className="facility-2nd-por"
-            src="ps_clinic/ps_clinic002.jpeg"
+            src="/ps_clinic/ps_clinic002.jpeg"
             alt="Rejuva Aesthetics Building"
           />
         </div>

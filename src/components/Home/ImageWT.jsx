@@ -7,17 +7,17 @@ const ImageWT = () => {
     <div className="image-container">
       {/* Three images stacked behind */}
       <img
-        src="ps_clinic/ps_clinic003.png"
+        src="/ps_clinic/ps_clinic003.png"
         alt="background"
         className="bg-image"
       />
       <img
-        src="ps_clinic/ps_clinic003.png"
+        src="/ps_clinic/ps_clinic003.png"
         alt="background"
         className="bg-image"
       />
       <img
-        src="ps_clinic/ps_clinic003.png"
+        src="/ps_clinic/ps_clinic003.png"
         alt="background"
         className="bg-image"
       />

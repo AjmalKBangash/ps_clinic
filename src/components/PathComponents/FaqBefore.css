@@ -30,8 +30,11 @@
   left: 3%;
 }
 .faq-sec-por-help {
+  width: 100% !important;
   position: relative;
+  padding: 2vh 3vw;
   padding-left: 5vh !important;
+  box-sizing: border-box;
 }
 .faq-sec-por-help-icon {
   position: absolute;
@@ -46,12 +49,13 @@
   overflow: hidden;
 }
 .faq-sec-por-card {
-  width: inherit;
+  width: 100%;
   font-size: 20px;
   background-color: rgba(128, 128, 128, 0.11);
   line-height: 40px;
   padding: 2vh 3vw;
   color: rgb(80, 80, 80);
+  box-sizing: border-box;
 }
 .faq-sec-por-help {
   width: 100%;
@@ -91,6 +95,7 @@
     box-sizing: border-box;
     overflow: hidden;
   }
+
   .faq-sec-por-card {
     padding: 2vh 6vw;
   }

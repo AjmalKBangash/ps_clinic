@@ -32,7 +32,16 @@ function Affiliate() {
               name in plastic surgery and aesthetic care. By partnering with us,
               you can share our advanced cosmetic procedures, from rejuvenating
               facelifts to body contouring, and{" "}
-              <span>earn commissions for every client referral.</span>
+              <span
+                style={{
+                  // color: "black",
+                  fontStyle: "italic",
+                  fontWeight: "400",
+                  textDecoration: "underline",
+                }}
+              >
+                earn commissions for every client referral.
+              </span>
             </div>
             <div className="aff-first-por-des">
               At <bold>Rejuva Aesthetics</bold>, we focus on delivering
