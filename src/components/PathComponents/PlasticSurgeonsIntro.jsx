@@ -200,6 +200,28 @@ function PlasticSurgeonsIntro() {
           services.
         </div>
       </>
+      {/* ////////////////////////// */}
+      {/* <div className="plastic-surgery-intro-dr-name-pic plastic-surgery-intro-dr-name-pic-gallary">
+        <div className="plastic-surgery-intro-dr-name">
+          <h1 style={{ fontWeight: "700" }}>
+            Dr.Imran Orakzai Surgueries and Procedures
+          </h1>
+          <div style={{ color: "rgb(80, 80, 80)" }}>Board Certified Doctor</div>
+        </div>
+      </div> */}
+      <div style={{ textAlign: "center" }}>
+        <div className="common-name-font">Dr.Imran Orakzai</div>
+        <div className="facility-1st-por-heading">
+          Surgeries{" "}
+          <span
+            style={{ borderBottom: "2px solid black", fontWeight: "inherit" }}
+          >
+            &
+          </span>{" "}
+          Procedures
+        </div>
+      </div>
+      {/* ////////////////////////// */}
       <Gallery />
       <Footer />
     </>

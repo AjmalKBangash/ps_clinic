@@ -22,12 +22,13 @@ import {
 } from "react-router-dom";
 import PlasticSurgeonsComponent from "./components/PathComponents/PlasticSurgeonsComponent";
 import PlasticSurgeonsIntro from "./components/PathComponents/PlasticSurgeonsIntro";
+import Procedures from "./components/Home/Procedures";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />}></Route>
-      {/* <Route path="/" element={<Home />}></Route> */}
+      <Route path="/procedures" element={<Procedures />}></Route>
       {/* <Route path="sign-up" element={<SignUp />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
       <Route
