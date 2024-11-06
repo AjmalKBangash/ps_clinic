@@ -17,3 +17,105 @@
 .procedure-visit-link {
   height: 42px;
 }
+.pro-four-cards-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pro-four-cards {
+  font-size: 22px;
+  height: 150px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pro-four-cards div {
+  margin: 10px 0;
+  font-weight: 400;
+}
+.ps-heading-pro {
+  font-size: 30px !important;
+  text-align: center;
+  margin: 35px 0;
+}
+.pro-four-cards-greenish {
+  background-color: #2e8b5634;
+}
+.pro-four-cards-redish {
+  background-color: #ff58331e;
+}
+.pro-four-cards-quotish {
+  background-color: #36454f;
+}
+.pro-four-cards-shadowsh {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.pro-four-cards-icons {
+  color: rgb(41, 41, 41);
+  font-size: 33px;
+  font-weight: 500;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.pro-right-icon {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.pro-procedure-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.overlay-card {
+  position: relative;
+  width: 40vw; /* Set desired width */
+  height: 300px; /* Set desired height */
+  overflow: hidden;
+  /* border-radius: 15px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.overlay-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 15px; */
+  filter: brightness(0.5);
+}
+
+.overlay-content {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  top: 0%;
+  left: 0%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* text-align: center; */
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 12px;
+  /* border-radius: 10px; */
+}
+
+.overlay-title {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.overlay-subtopic {
+  font-size: 16px;
+  margin: 0 0 6px 0;
+  padding-left: 10px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */

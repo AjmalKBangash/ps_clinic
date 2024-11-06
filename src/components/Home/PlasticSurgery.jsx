@@ -18,9 +18,8 @@ function PlasticSurgery() {
       </div>
       <div className="ps-des">
         <div>
-          Take a few minutes and take a look at our BBL before and after
-          pictures of our{" "}
-          <span className="ps-des-clr">Peshawar plastic surgeons.</span>
+          Take a few minutes and take a look at our before and after pictures of
+          our <span className="ps-des-clr">Peshawar plastic surgeons.</span>
         </div>
       </div>
       <div className="common-visit-link-cover">

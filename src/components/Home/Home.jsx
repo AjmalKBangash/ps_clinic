@@ -19,7 +19,6 @@ function Home() {
         imageSrc="/ps_clinic/ps_clinic_home.jpg"
       />
       <Facility />
-      <Procedures />
       <Treatments />
       <ImageWT imageUrl="/ps_clinic/ps_clinic003.png" text="Your Text Here" />
       <PlasticSurgeons />

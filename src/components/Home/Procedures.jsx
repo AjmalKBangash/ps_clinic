@@ -7,6 +7,9 @@ import { FaHandshake } from "react-icons/fa";
 import { SiTrustpilot } from "react-icons/si";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { GrUserExpert } from "react-icons/gr";
+import { FaReact } from "react-icons/fa";
+import PlasticSurgery from "./PlasticSurgery";
+// import { FaAngleRight } from "react-icons/fa";
 
 function Procedures() {
   return (
@@ -69,25 +72,182 @@ function Procedures() {
           </>
         ) : null}
       </div>
-      <div>COSMETIC SURGERY CLINIC #1 IN PESHAWAR</div>
-      <div>
-        <div className="pro-four-cards">
-          <VscWorkspaceTrusted />
+      <div className="ps-heading ps-heading-pro">
+        COSMETIC SURGERY CLINIC #1 IN PESHAWAR
+      </div>
+      <div className="pro-four-cards-top">
+        <div className="pro-four-cards pro-four-cards-greenish">
+          <VscWorkspaceTrusted className="pro-four-cards-icons" />
+          <div>SAFE</div>
         </div>
-        <div>Safe</div>
-        <div className="pro-four-cards">
-          <SiTrustpilot />
-          <div>Trust</div>
+        <div className="pro-four-cards pro-four-cards-greenish">
+          <SiTrustpilot className="pro-four-cards-icons" />
+          <div>TRUSTED</div>
         </div>
-        <div className="pro-four-cards">
-          <GrUserExpert />
+        <div className="pro-four-cards pro-four-cards-greenish">
+          <GrUserExpert className="pro-four-cards-icons" />
           <div>EXCELLENCE</div>
         </div>
-        <div className="pro-four-cards">
-          <FaHandshake />
+        <div className="pro-four-cards pro-four-cards-greenish">
+          <FaHandshake className="pro-four-cards-icons" />
           <div>ACCESSIBLE</div>
         </div>
       </div>
+      <div className="ps-des" style={{ textAlign: "center" }}>
+        <div>
+          "At Rejuva Aesthetics, we bring your beauty goals to life with expert
+          precision and advanced procedures. Our highly trained specialists
+          focus on delivering personalized transformations that enhance your
+          natural features and boost your confidence."
+        </div>
+        <br />
+        <div>
+          "From facial rejuvenation to body sculpting, we offer a wide range of
+          surgical and non-surgical treatments tailored to each patient’s unique
+          needs. Our commitment to transparency and excellence ensures a
+          seamless, comfortable experience every step of the way."
+        </div>
+        <br />
+        <div>
+          "Discover the exceptional care and artistry that define our approach.
+          At Rejuva Aesthetics, we believe in empowering you to look and feel
+          your best with results that are beautifully natural and refined."
+        </div>
+        <br />
+      </div>
+      <div className="pro-procedure-cards">
+        <div className="overlay-card">
+          <img
+            // src="https://via.placeholder.com/300" // Replace with your image source
+            src="/ps_clinic/ps_clinic001.jpg"
+            alt="Card Background"
+            className="overlay-card-image"
+          />
+          <div className="overlay-content">
+            <h2 className="overlay-title">Body Surgery</h2>
+            <br />
+            <hr
+              style={{
+                height: "4px",
+                width: "60px",
+                backgroundColor: "white",
+              }}
+            />
+            <br />
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+          </div>
+        </div>
+        <div className="overlay-card">
+          <img
+            // src="https://via.placeholder.com/300" // Replace with your image source
+            src="/ps_clinic/ps_clinic001.jpg"
+            alt="Card Background"
+            className="overlay-card-image"
+          />
+          <div className="overlay-content">
+            <h2 className="overlay-title">Hair Transplant</h2>
+            <br />
+            <hr
+              style={{
+                height: "4px",
+                width: "60px",
+                backgroundColor: "white",
+              }}
+            />
+            <br />
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+          </div>
+        </div>
+        <div className="overlay-card">
+          <img
+            // src="https://via.placeholder.com/300" // Replace with your image source
+            src="/ps_clinic/ps_clinic001.jpg"
+            alt="Card Background"
+            className="overlay-card-image"
+          />
+          <div className="overlay-content">
+            <h2 className="overlay-title">Your Another Service Here</h2>
+            <br />
+            <hr
+              style={{
+                height: "4px",
+                width: "60px",
+                backgroundColor: "white",
+              }}
+            />
+            <br />
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+          </div>
+        </div>
+        <div className="overlay-card">
+          <img
+            // src="https://via.placeholder.com/300" // Replace with your image source
+            src="/ps_clinic/ps_clinic001.jpg"
+            alt="Card Background"
+            className="overlay-card-image"
+          />
+          <div className="overlay-content">
+            <h2 className="overlay-title">Your Another Service Here</h2>
+            <br />
+            <hr
+              style={{
+                height: "4px",
+                width: "60px",
+                backgroundColor: "white",
+              }}
+            />
+            <br />
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+            <p className="overlay-subtopic">
+              <span className="pro-right-icon">{">"}</span>Subtopic Name
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <PlasticSurgery />
       <Footer />
     </>
   );
